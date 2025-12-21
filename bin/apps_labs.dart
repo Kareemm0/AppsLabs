@@ -2,18 +2,39 @@ import 'package:apps_labs/car_barnd.dart';
 import 'package:apps_labs/charachter_one.dart.dart';
 import 'package:apps_labs/charachter_three.dart';
 import 'package:apps_labs/charachter_two.dart';
+import 'package:apps_labs/company.dart';
+import 'package:apps_labs/cridt_card.dart';
 import 'package:apps_labs/encapsulation.dart';
+import 'package:apps_labs/payment.dart';
+import 'package:apps_labs/paypal.dart';
+import 'package:apps_labs/wallet.dart';
 
 void main() {
-  final BankAccount bankAccount = BankAccount("Kareem", 5000, "Developer");
+  final company = Company("Kareem");
+  print(Company.counter);
 
-  bankAccount.balanceSetter = 3000;
-  bankAccount.balanceSetter = 3000;
-  bankAccount.balanceSetter = 4000;
-  bankAccount.deposit = 1500;
-  bankAccount.balanceSetter = 1500;
+  final company2 = Company("Ahmed");
+  print(Company.counter);
 
-  bankAccount.balance;
+  print(Company.counter);
+  final company3 = Company("Sayed");
+  print(Company.counter);
+  print(Company.counter);
+  final company4 = Company("Mahmoud");
+  print(Company.counter);
+  // Payment payment = CridtCard();
+  // payment = Paypal();
+  // payment = Wallet();
+
+  //final BankAccount bankAccount = BankAccount("Kareem", 5000, "Developer");
+
+  // bankAccount.balanceSetter = 3000;
+  // bankAccount.balanceSetter = 3000;
+  // bankAccount.balanceSetter = 4000;
+  // bankAccount.deposit = 1500;
+  // bankAccount.balanceSetter = 1500;
+
+  // bankAccount.balance;
   // bankAccount.balance = 1000;
 
   // bankAccount.balance -= 2000;
