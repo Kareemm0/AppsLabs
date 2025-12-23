@@ -4,5 +4,9 @@ class Cars {
     speed = 0;
   }
   final String brand;
+
   late int speed;
+
+  int? speed;
+
 }
